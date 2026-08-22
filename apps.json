@@ -13,5 +13,13 @@
       "changelog": "",
       "updatedAt": "2026-08-20"
     }
+  ],
+  "alist_sources": [
+    {
+      "id": "iosxn",
+      "name": "iOSXN 网盘",
+      "baseUrl": "https://pan.iosxn.cn",
+      "isEnabled": true
+    }
   ]
 }
