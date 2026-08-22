@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "apps": [
+    {
+      "id": "录音机",
+      "name": "录音机",
+      "version": "1.0",
+      "category": "工具",
+      "description": "录音机",
+      "icon": "",
+      "ipa": "https://pan.iosxn.cn/d/%E5%B7%A8%E9%AD%94%E4%B8%93%E5%8C%BA/%E9%80%9A%E8%AF%9D%E5%BD%95%E9%9F%B3/TrollRecorder%E5%B7%A8%E9%AD%94%E5%BD%95%E9%9F%B3%E6%9C%BA%EF%BC%88%E5%85%8D%E8%B4%B9iOS15-17.0%EF%BC%89/TRApp_4.4-3627.tipa",
+      "size": 0,
+      "changelog": "",
+      "updatedAt": "2026-08-20"
+    }
+  ]
+}
