@@ -7,6 +7,18 @@
       "name": "666",
       "baseUrl": "https://pan.iosku.top",
       "isEnabled": true
+    },
+    {
+      "id": "alist-mt4ei1ih",
+      "name": "111",
+      "baseUrl": "https://pan.iosxn.cn",
+      "isEnabled": true
+    },
+    {
+      "id": "alist-mt4emypo",
+      "name": "222",
+      "baseUrl": "https://pan.iosfls.cn",
+      "isEnabled": true
     }
   ]
 }
