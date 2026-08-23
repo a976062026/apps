@@ -3,21 +3,51 @@
   "apps": [],
   "alist_sources": [
     {
-      "id": "alist-mt3uq9o9",
-      "name": "666",
-      "baseUrl": "https://pan.iosku.top",
-      "isEnabled": true
-    },
-    {
-      "id": "alist-mt4ei1ih",
-      "name": "111",
+      "id": "alist-mt5ppwuv",
+      "name": "源1",
       "baseUrl": "https://pan.iosxn.cn",
       "isEnabled": true
     },
     {
-      "id": "alist-mt4emypo",
-      "name": "222",
-      "baseUrl": "https://pan.iosfls.cn",
+      "id": "alist-mt5pqerc",
+      "name": "源2",
+      "baseUrl": "https://pan.iosku.top",
+      "isEnabled": true
+    },
+    {
+      "id": "alist-mt5pqq6u",
+      "name": "源3",
+      "baseUrl": "https://ios.lewsky.top",
+      "isEnabled": true
+    },
+    {
+      "id": "alist-mt5syxfc",
+      "name": "源4",
+      "baseUrl": "https://alist.jiejingfan.vip",
+      "isEnabled": true
+    },
+    {
+      "id": "alist-mt5sz5su",
+      "name": "源5",
+      "baseUrl": "https://pan.iosi.vip",
+      "isEnabled": true
+    },
+    {
+      "id": "alist-mt5szg87",
+      "name": "源6",
+      "baseUrl": "https://pan.ios98.com",
+      "isEnabled": true
+    },
+    {
+      "id": "alist-mt5sznan",
+      "name": "源7",
+      "baseUrl": "http://aoxiang.asia:88",
+      "isEnabled": true
+    },
+    {
+      "id": "alist-mt5t05o6",
+      "name": "源8",
+      "baseUrl": "https://wp.sha0p.cn/?page=1",
       "isEnabled": true
     }
   ]
