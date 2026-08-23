@@ -37,18 +37,7 @@
       "name": "源6",
       "baseUrl": "https://pan.ios98.com",
       "isEnabled": true
-    },
-    {
-      "id": "alist-mt5sznan",
-      "name": "源7",
-      "baseUrl": "http://aoxiang.asia:88",
-      "isEnabled": true
-    },
-    {
-      "id": "alist-mt5t05o6",
-      "name": "源8",
-      "baseUrl": "https://wp.sha0p.cn/?page=1",
-      "isEnabled": true
     }
-  ]
+  ],
+  "min_app_version": 67
 }
