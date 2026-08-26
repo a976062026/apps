@@ -1,11 +1,47 @@
 {
   "version": 1,
   "apps": [],
-  "alist_sources": [],
+  "alist_sources": [
+    {
+      "id": "alist-mt9qq00a",
+      "name": "源1",
+      "baseUrl": "https://pan.iosxn.cn",
+      "isEnabled": true
+    },
+    {
+      "id": "alist-mt9qqa0v",
+      "name": "源2",
+      "baseUrl": "https://pan.iosku.top",
+      "isEnabled": true
+    },
+    {
+      "id": "alist-mt9qqj56",
+      "name": "源3",
+      "baseUrl": "https://ios.lewsky.top",
+      "isEnabled": true
+    },
+    {
+      "id": "alist-mt9qqsyq",
+      "name": "源4",
+      "baseUrl": "https://alist.jiejingfan.vip",
+      "isEnabled": true
+    },
+    {
+      "id": "alist-mt9qr3pd",
+      "name": "源5",
+      "baseUrl": "https://pan.iosi.vip",
+      "isEnabled": true
+    },
+    {
+      "id": "alist-mt9qrdhu",
+      "name": "源6",
+      "baseUrl": "https://pan.ios98.com",
+      "isEnabled": true
+    }
+  ],
   "blocked_keywords": [
     "定位",
-    "越狱",
-    "多巴胺",
-    "dopamine"
-  ]
+    "越狱"
+  ],
+  "min_app_version": 76
 }
