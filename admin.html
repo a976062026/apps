@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>巨魔商店 · 软件源后台（精简版）</title>
+<style>
+  :root {
+    --bg: #f2f2f7; --card: #ffffff; --text: #1c1c1e; --sub: #8e8e93;
+    --accent: #007aff; --red: #ff3b30; --border: #e5e5ea;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif; background: var(--bg); color: var(--text); padding: 20px; max-width: 720px; margin: 0 auto; }
+  h1 { font-size: 24px; margin-bottom: 4px; }
+  .sub { color: var(--sub); font-size: 13px; margin-bottom: 20px; line-height: 1.6; }
+  .toolbar { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 16px; }
+  button { border: none; border-radius: 8px; padding: 8px 14px; font-size: 14px; cursor: pointer; background: var(--card); color: var(--accent); border: 1px solid var(--border); }
+  button.primary { background: var(--accent); color: #fff; border-color: var(--accent); }
+  button.danger { color: var(--red); border-color: var(--red); }
+  button:hover { opacity: 0.85; }
+  .card { background: var(--card); border-radius: 12px; padding: 14px; margin-bottom: 10px; border: 1px solid var(--border); display: flex; align-items: center; gap: 12px; }
+  .app-icon { width: 44px; height: 44px; border-radius: 10px; background: linear-gradient(135deg, #a78bfa, #60a5fa); color: #fff; display: flex; align-items: center; justify-content: center; font-size: 20px; font-weight: 700; flex-shrink: 0; }
+  .app-info { flex: 1; min-width: 0; }
+  .app-name { font-weight: 600; font-size: 15px; }
+  .app-meta { color: var(--sub); font-size: 12px; margin-top: 2px; word-break: break-all; }
+  .app-actions { display: flex; gap: 6px; }
+  .panel { background: var(--card); border-radius: 12px; padding: 16px; border: 1px solid var(--border); margin-bottom: 16px; }
+  .panel h2 { font-size: 16px; margin-bottom: 12px; }
+  .field { margin-bottom: 10px; }
+  .field label { display: block; font-size: 12px; color: var(--sub); margin-bottom: 4px; }
+  .field input { width: 100%; border: 1px solid var(--border); border-radius: 8px; padding: 8px 10px; font-size: 14px; font-family: inherit; background: #fff; }
+  .btn-row { display: flex; gap: 8px; margin-top: 12px; }
+  pre { background: #1c1c1e; color: #7fd7ff; border-radius: 8px; padding: 12px; font-size: 12px; overflow: auto; max-height: 240px; white-space: pre-wrap; word-break: break-all; }
+  .hint { font-size: 12px; color: var(--sub); }
+  .empty { text-align: center; color: var(--sub); padding: 30px 0; }
+  #toast { position: fixed; left: 50%; bottom: 30px; transform: translateX(-50%); background: rgba(28,28,30,0.9); color: #fff; padding: 10px 18px; border-radius: 10px; font-size: 14px; opacity: 0; transition: opacity .25s; pointer-events: none; }
+  #toast.show { opacity: 1; }
+</style>
+</head>
+<body>
+
+<h1>巨魔商店 · 软件源后台</h1>
+<div class="sub">
+  精简测试版：只需填写「软件名称」和「IPA 直链地址」，其余字段自动生成默认值。
+  编辑完点「导出 JSON」托管到 HTTPS 静态地址，并把地址编译进 App（Config.swift 的 sourceURL）。
+</div>
+
+<div class="toolbar">
+  <button class="primary" onclick="openEditor()">＋ 添加软件</button>
+  <button onclick="exportJSON()">导出 JSON 文件</button>
+  <button onclick="copyJSON()">复制 JSON</button>
+  <button onclick="togglePreview()">查看 JSON</button>
+  <button onclick="importJSON()">导入 JSON</button>
+</div>
+
+<div id="preview" class="panel" style="display:none;">
+  <h2>apps.json 预览</h2>
+  <pre id="jsonPreview"></pre>
+  <p class="hint">结构：{"version":1,"apps":[...]}。size 为 0 时 App 下载完成后自动按实际大小显示。</p>
+</div>
+
+<div id="editor" class="panel" style="display:none;">
+  <h2 id="editorTitle">添加软件</h2>
+  <div class="field"><label>软件名称 *</label><input id="f_name" placeholder="例如：Feather"></div>
+  <div class="field"><label>IPA 直链地址 *</label><input id="f_ipa" placeholder="https://.../app.ipa"></div>
+  <div class="btn-row">
+    <button class="primary" onclick="saveApp()">保存</button>
+    <button onclick="closeEditor()">取消</button>
+  </div>
+</div>
+
+<div id="appList"></div>
+<div class="empty" id="emptyHint" style="display:none;">还没有软件，点击「添加软件」开始。</div>
+
+<div class="panel">
+  <h2>网盘源管理（一键添加 Alist 网盘）</h2>
+  <p class="hint" style="margin-bottom:12px;">这里维护的网盘会写入 apps.json 的 alist_sources 字段，App 启动后自动拉取，首页搜索框下方可一键切换。字段：名称 + Alist 地址（如 https://pan.iosxn.cn）。</p>
+  <div class="field"><label>网盘名称 *</label><input id="alist_name" placeholder="例如：iOSXN 网盘"></div>
+  <div class="field"><label>Alist 地址 *</label><input id="alist_url" placeholder="https://pan.iosxn.cn"></div>
+  <div class="btn-row">
+    <button class="primary" id="alist_btn" onclick="addAlistSource()">＋ 添加网盘</button>
+  </div>
+  <div id="alistList" style="margin-top:14px;"></div>
+</div>
+
+<div class="panel">
+  <h2>停用路径 / 屏蔽词 / 公告（写入 apps.json）</h2>
+  <p class="hint" style="margin-bottom:12px;">停用路径：隐藏历史版本等，每行一个，可填完整路径或文件名。屏蔽词：命中关键词的资源与文件夹全部隐藏，用户搜该关键词按无结果处理，每行一个。公告：打开 App 时展示一次（可关闭），留空则不展示。</p>
+  <div class="field"><label>停用路径（每行一个）</label><textarea id="disabled_paths" rows="4" style="width:100%;border:1px solid var(--border);border-radius:8px;padding:8px 10px;font-size:13px;font-family:inherit;"></textarea></div>
+  <div class="field"><label>屏蔽词（输入后点「添加」，也可批量粘贴到文本框）</label>
+  <div style="display:flex;gap:8px;margin-bottom:6px;">
+    <input id="blocked_word" placeholder="输入要屏蔽的关键词" style="flex:1;">
+    <button type="button" class="primary" onclick="addBlockedKeyword()">添加</button>
+  </div>
+  <textarea id="blocked_keywords" rows="3" style="width:100%;border:1px solid var(--border);border-radius:8px;padding:8px 10px;font-size:13px;font-family:inherit;"></textarea>
+  <div id="blocked_list" style="margin-top:4px;"></div></div>
+  <div class="field"><label>公告（打开 App 时展示）</label><input id="notice_inp" placeholder="例如：新增 XX 应用，欢迎体验"></div>
+  <div class="field"><label>最低可用构建号（低于该号的 App 启动即停用；如 67。留空不启用）</label><input id="min_app_version" placeholder="67"></div>
+  <div class="btn-row">
+    <button class="primary" onclick="saveExtras()">保存</button>
+  </div>
+</div>
+
+<div class="panel">
+  <h2>一键发布（保存并提交到 GitHub）</h2>
+  <p class="hint" style="margin-bottom:12px;">点「保存并发布」= 把当前内容（软件/网盘源/停用/公告/白名单等）直接提交到你的仓库，免去导出上传。Token 只存本浏览器（localStorage），可在 GitHub 随时撤销。</p>
+  <div class="field"><label>仓库（owner/repo）</label><input id="gh_repo" placeholder="a976062026/apps"></div>
+  <div class="field"><label>GitHub Token（Fine-grained，仅 apps 仓库 Contents 读+写）</label><input id="gh_token" type="password" placeholder="github_pat_..."></div>
+  <div class="btn-row">
+    <button onclick="saveGhCfg()">保存配置</button>
+    <button class="primary" onclick="publishGh()">保存并发布</button>
+  </div>
+  <pre id="gh_result" style="margin-top:12px;display:none;"></pre>
+</div>
+
+<div id="toast"></div>
+
+<script>
+const STORE_KEY = 'trollstoreshop-admin-v1';
+let apps = [];
+let editingIndex = null;
+
+try { apps = JSON.parse(localStorage.getItem(STORE_KEY) || '[]'); } catch (e) { apps = []; }
+const ALIST_KEY = 'tss-alist-v1';
+let alistSources = [];
+let alistEditIndex = null;
+try { alistSources = JSON.parse(localStorage.getItem(ALIST_KEY) || '[]'); } catch (e) { alistSources = []; }
+const EXTRAS_KEY = '***';
+const GH_KEY = '***';
+let disabledPaths = [];
+let noticeText = '';
+let minAppVersion = '';
+let blockedKeywords = [];
+try {
+  const e = JSON.parse(localStorage.getItem(EXTRAS_KEY) || '{}');
+  disabledPaths = Array.isArray(e.disabledPaths) ? e.disabledPaths : [];
+  noticeText = e.notice || '';
+  minAppVersion = e.minAppVersion || '';
+  blockedKeywords = Array.isArray(e.blockedKeywords) ? e.blockedKeywords : [];
+} catch (e) {}
+
+function toast(msg) {
+  const t = document.getElementById('toast');
+  t.textContent = msg;
+  t.classList.add('show');
+  setTimeout(() => t.classList.remove('show'), 2000);
+}
+
+function esc(s) {
+  return String(s == null ? '' : s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+}
+
+function slugify(name) {
+  return (name.trim().replace(/[^\w\u4e00-\u9fff]+/g, '-').replace(/^-+|-+$/g, '').slice(0, 48) || 'app');
+}
+
+function today() {
+  const d = new Date();
+  return d.getFullYear() + '-' + String(d.getMonth() + 1).padStart(2, '0') + '-' + String(d.getDate()).padStart(2, '0');
+}
+
+function renderExtras() {
+  document.getElementById('disabled_paths').value = disabledPaths.join('\n');
+  document.getElementById('blocked_keywords').value = blockedKeywords.join('\n');
+  document.getElementById('notice_inp').value = noticeText;
+  document.getElementById('min_app_version').value = minAppVersion;
+  renderBlockedList();
+}
+
+// 已添加屏蔽词：独立展示并可逐个删除
+function addBlockedKeyword() {
+  const w = document.getElementById('blocked_word').value.trim();
+  if (!w) { toast('请输入屏蔽词'); return; }
+  if (!blockedKeywords.includes(w)) { blockedKeywords.push(w); }
+  document.getElementById('blocked_word').value = '';
+  document.getElementById('blocked_keywords').value = blockedKeywords.join('\n');
+  renderBlockedList();
+  saveExtras();
+  toast('已添加屏蔽词：' + w);
+}
+function renderBlockedList() {
+  const box = document.getElementById('blocked_list');
+  if (!box) return;
+  if (!blockedKeywords.length) { box.innerHTML = '<p class="hint">还没有屏蔽词</p>'; return; }
+  box.innerHTML = blockedKeywords.map((k, i) =>
+    '<span style="display:inline-block;background:#f2f3f7;border:1px solid var(--border);border-radius:999px;padding:4px 10px;margin:3px;font-size:13px;">' + esc(k) +
+    ' <span style="cursor:pointer;color:var(--red);font-weight:700;" onclick="removeBlockedKeyword(' + i + ')">×</span></span>'
+  ).join('');
+}
+function removeBlockedKeyword(i) {
+  blockedKeywords.splice(i, 1);
+  document.getElementById('blocked_keywords').value = blockedKeywords.join('\n');
+  renderBlockedList();
+  saveExtras();
+  toast('已删除屏蔽词');
+}
+
+// ---- 一键发布 GitHub ----
+let ghRepo = '';
+let ghToken = '';
+try {
+  const g = JSON.parse(localStorage.getItem(GH_KEY) || '{}');
+  ghRepo = g.repo || '';
+  ghToken = g.token || '';
+} catch (e) {}
+
+function renderGh() {
+  document.getElementById('gh_repo').value = ghRepo;
+  document.getElementById('gh_token').value = ghToken;
+}
+
+function saveGhCfg() {
+  ghRepo = document.getElementById('gh_repo').value.trim();
+  ghToken = document.getElementById('gh_token').value.trim();
+  localStorage.setItem(GH_KEY, JSON.stringify({ repo: ghRepo, token: ghToken }));
+  toast('GitHub 配置已保存');
+}
+
+// ---- 发布到 Alist 已移除（保留 GitHub 一键发布） ----
+
+async function publishGh() {
+  if (!ghRepo || !ghToken) { saveGhCfg(); }
+  if (!ghRepo || !ghToken) { toast('请先填写仓库和 Token'); return; }
+  const out = document.getElementById('gh_result');
+  out.style.display = 'block';
+  out.textContent = '发布中…';
+  try {
+    const path = 'apps.json';
+    const base = 'https://api.github.com/repos/' + ghRepo + '/contents/' + path;
+    const headers = {
+      'Authorization': 'token ' + ghToken,
+      'Accept': 'application/vnd.github+json'
+    };
+    let sha = null;
+    try {
+      const r = await fetch(base, { headers });
+      if (r.ok) sha = (await r.json()).sha;
+    } catch (e) {}
+    const content = btoa(unescape(encodeURIComponent(buildFeed())));
+    const body = {
+      message: 'update apps.json via admin ' + new Date().toISOString().slice(0, 19),
+      content: content
+    };
+    if (sha) body.sha = sha;
+    const res = await fetch(base, {
+      method: 'PUT',
+      headers: { ...headers, 'Content-Type': 'application/json' },
+      body: JSON.stringify(body)
+    });
+    if (res.ok) {
+      out.textContent = '✅ 发布成功！GitHub Pages 约 1-2 分钟后生效。';
+      toast('发布成功');
+    } else {
+      const err = await res.json();
+      out.textContent = '❌ 发布失败：' + (err.message || res.status);
+    }
+  } catch (e) {
+    out.textContent = '❌ 网络错误：' + e.message;
+  }
+}
+
+function saveExtras() {
+  disabledPaths = document.getElementById('disabled_paths').value.split('\n').map(s => s.trim()).filter(Boolean);
+  noticeText = document.getElementById('notice_inp').value.trim();
+  minAppVersion = document.getElementById('min_app_version').value.trim();
+  blockedKeywords = document.getElementById('blocked_keywords').value.split('\n').map(s => s.trim()).filter(Boolean);
+  localStorage.setItem(EXTRAS_KEY, JSON.stringify({ disabledPaths, notice: noticeText, minAppVersion, blockedKeywords }));
+  renderExtras();
+  updatePreview();
+  toast('已保存');
+}
+
+function render() {
+  const list = document.getElementById('appList');
+  document.getElementById('emptyHint').style.display = apps.length ? 'none' : 'block';
+  list.innerHTML = apps.map((a, i) => `
+    <div class="card">
+      <div class="app-icon">${esc((a.name || '?').charAt(0).toUpperCase())}</div>
+      <div class="app-info">
+        <div class="app-name">${esc(a.name)}</div>
+        <div class="app-meta">${esc(a.ipa || '')}</div>
+      </div>
+      <div class="app-actions">
+        <button onclick="openEditor(${i})">编辑</button>
+        <button class="danger" onclick="removeApp(${i})">删除</button>
+      </div>
+    </div>`).join('');
+  saveLocal();
+  updatePreview();
+}
+
+function openEditor(idx) {
+  editingIndex = idx == null ? null : idx;
+  document.getElementById('editorTitle').textContent = idx == null ? '添加软件' : '编辑软件';
+  const a = idx == null ? {} : apps[idx];
+  document.getElementById('f_name').value = a.name || '';
+  document.getElementById('f_ipa').value = a.ipa || '';
+  document.getElementById('editor').style.display = 'block';
+  document.getElementById('editor').scrollIntoView({ behavior: 'smooth' });
+}
+
+function closeEditor() {
+  document.getElementById('editor').style.display = 'none';
+}
+
+function saveApp() {
+  const name = document.getElementById('f_name').value.trim();
+  const ipa = document.getElementById('f_ipa').value.trim();
+  if (!name) { toast('请填写软件名称'); return; }
+  if (!/^https?:\/\//i.test(ipa)) { toast('IPA 地址必须是 https:// 开头'); return; }
+  const app = {
+    id: slugify(name),
+    name: name,
+    version: '1.0',
+    category: '工具',
+    description: name,
+    icon: '',
+    ipa: ipa,
+    size: 0,
+    changelog: '',
+    updatedAt: today()
+  };
+  if (editingIndex == null) {
+    if (apps.some(a => a.id === app.id)) { app.id = app.id + '-' + Date.now().toString(36); }
+    apps.push(app);
+  } else {
+    apps[editingIndex] = app;
+  }
+  closeEditor();
+  render();
+  toast('已保存');
+}
+
+function removeApp(idx) {
+  if (!confirm('确定删除「' + apps[idx].name + '」？')) return;
+  apps.splice(idx, 1);
+  render();
+  toast('已删除');
+}
+
+function renderAlist() {
+  const box = document.getElementById('alistList');
+  if (!alistSources.length) {
+    box.innerHTML = '<p class="hint">还没有网盘源。默认使用 App 内置网盘（pan.iosxn.cn），添加后 App 内可切换。</p>';
+    return;
+  }
+  box.innerHTML = alistSources.map((s, i) => `
+    <div class="card">
+      <div class="app-info">
+        <div class="app-name">${esc(s.name)} ${s.isEnabled === false ? '<span style="color:var(--sub)">（停用）</span>' : ''}</div>
+        <div class="app-meta">${esc(s.baseUrl)}</div>
+      </div>
+      <div class="app-actions">
+        <button onclick="editAlistSource(${i})">编辑</button>
+        <button onclick="toggleAlistSource(${i})">${s.isEnabled === false ? '启用' : '停用'}</button>
+        <button class="danger" onclick="removeAlistSource(${i})">删除</button>
+      </div>
+    </div>`).join('');
+  saveAlistLocal();
+  updatePreview();
+}
+
+function saveAlistLocal() {
+  localStorage.setItem(ALIST_KEY, JSON.stringify(alistSources));
+}
+
+function addAlistSource() {
+  const name = document.getElementById('alist_name').value.trim();
+  const url = document.getElementById('alist_url').value.trim().replace(/\/+$/, '');
+  if (!name) { toast('请填写网盘名称'); return; }
+  if (!/^https?:\/\//i.test(url)) { toast('Alist 地址必须是 http(s):// 开头'); return; }
+  if (alistEditIndex == null) {
+    if (alistSources.some(s => s.baseUrl === url)) { toast('该网盘地址已存在'); return; }
+    alistSources.push({ id: 'alist-' + Date.now().toString(36), name, baseUrl: url, isEnabled: true });
+    toast('已添加网盘：' + name);
+  } else {
+    alistSources[alistEditIndex].name = name;
+    alistSources[alistEditIndex].baseUrl = url;
+    alistEditIndex = null;
+    document.getElementById('alist_btn').textContent = '＋ 添加网盘';
+    toast('已保存修改');
+  }
+  document.getElementById('alist_name').value = '';
+  document.getElementById('alist_url').value = '';
+  renderAlist();
+}
+
+function editAlistSource(idx) {
+  alistEditIndex = idx;
+  document.getElementById('alist_name').value = alistSources[idx].name;
+  document.getElementById('alist_url').value = alistSources[idx].baseUrl;
+  document.getElementById('alist_btn').textContent = '保存修改';
+  document.getElementById('alist_name').scrollIntoView({ behavior: 'smooth' });
+}
+
+function toggleAlistSource(idx) {
+  alistSources[idx].isEnabled = alistSources[idx].isEnabled === false;
+  renderAlist();
+  toast(alistSources[idx].isEnabled === false ? '已停用' : '已启用');
+}
+
+function removeAlistSource(idx) {
+  if (!confirm('确定删除网盘「' + alistSources[idx].name + '」？')) return;
+  alistSources.splice(idx, 1);
+  renderAlist();
+  toast('已删除');
+}
+
+function saveLocal() {
+  localStorage.setItem(STORE_KEY, JSON.stringify(apps));
+}
+
+function buildFeed() {
+  const feed = { version: 1, apps, alist_sources: alistSources };
+  if (disabledPaths.length) feed.disabled_paths = disabledPaths;
+  if (blockedKeywords.length) feed.blocked_keywords = blockedKeywords;
+  if (noticeText) feed.notice = noticeText;
+  const minV = parseInt(minAppVersion, 10);
+  if (!isNaN(minV) && minV > 0) feed.min_app_version = minV;
+  return JSON.stringify(feed, null, 2);
+}
+
+function exportJSON() {
+  const blob = new Blob([buildFeed()], { type: 'application/json' });
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = 'apps.json';
+  a.click();
+  URL.revokeObjectURL(a.href);
+  toast('已导出 apps.json');
+}
+
+function copyJSON() {
+  navigator.clipboard.writeText(buildFeed()).then(() => toast('JSON 已复制'), () => toast('复制失败'));
+}
+
+function togglePreview() {
+  const p = document.getElementById('preview');
+  p.style.display = p.style.display === 'none' ? 'block' : 'none';
+  updatePreview();
+}
+
+function updatePreview() {
+  document.getElementById('jsonPreview').textContent = buildFeed();
+}
+
+function importJSON() {
+  const input = document.createElement('input');
+  input.type = 'file';
+  input.accept = '.json,application/json';
+  input.onchange = () => {
+    const f = input.files[0];
+    if (!f) return;
+    const reader = new FileReader();
+    reader.onload = () => {
+      try {
+        const d = JSON.parse(reader.result);
+        const list = Array.isArray(d) ? d : (Array.isArray(d.apps) ? d.apps : null);
+        if (!list) throw new Error('bad');
+        if (!confirm('导入将覆盖当前 ' + apps.length + ' 个软件，继续？')) return;
+        apps = list;
+        render();
+        toast('已导入 ' + list.length + ' 个软件');
+      } catch (e) {
+        toast('导入失败：JSON 格式错误');
+      }
+    };
+    reader.readAsText(f);
+  };
+  input.click();
+}
+
+render();
+renderAlist();
+renderExtras();
+renderGh();
+</script>
+</body>
+</html>
