@@ -38,5 +38,10 @@
       "baseUrl": "https://pan.ios98.com",
       "isEnabled": true
     }
+  ],
+  "blocked_keywords": [
+    "定位",
+    "越狱",
+    "dopamine"
   ]
 }
