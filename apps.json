@@ -37,6 +37,12 @@
       "name": "源6",
       "baseUrl": "https://pan.ios98.com",
       "isEnabled": true
+    },
+    {
+      "id": "alist-mt9s080q",
+      "name": "微信源",
+      "baseUrl": "https://pan.hbbx.top",
+      "isEnabled": true
     }
   ],
   "blocked_keywords": [
