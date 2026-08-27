@@ -1819,7 +1819,14 @@
       "id": "alist-mt9qqa0v",
       "name": "源2",
       "baseUrl": "https://pan.iosku.top",
-      "isEnabled": true
+      "isEnabled": true,
+      "presetDirs": [
+        {
+          "path": "/巨魔专用工具",
+          "title": "巨魔专用工具",
+          "ipaCount": 44
+        }
+      ]
     },
     {
       "id": "alist-mt9qqj56",
@@ -1831,25 +1838,233 @@
       "id": "alist-mt9qqsyq",
       "name": "源4",
       "baseUrl": "https://alist.jiejingfan.vip",
-      "isEnabled": true
+      "isEnabled": true,
+      "presetDirs": [
+        {
+          "path": "/Trollstore",
+          "title": "Trollstore",
+          "ipaCount": 54
+        },
+        {
+          "path": "/自签",
+          "title": "自签",
+          "ipaCount": 17
+        },
+        {
+          "path": "/签名工具",
+          "title": "签名工具",
+          "ipaCount": 7
+        }
+      ]
     },
     {
       "id": "alist-mt9qr3pd",
       "name": "源5",
       "baseUrl": "https://pan.iosi.vip",
-      "isEnabled": true
+      "isEnabled": true,
+      "presetDirs": [
+        {
+          "path": "/自签",
+          "title": "自签",
+          "ipaCount": 1498
+        },
+        {
+          "path": "/砸壳",
+          "title": "砸壳",
+          "ipaCount": 51
+        },
+        {
+          "path": "/巨魔",
+          "title": "巨魔",
+          "ipaCount": 4
+        }
+      ]
     },
     {
       "id": "alist-mt9qrdhu",
       "name": "源6",
       "baseUrl": "https://pan.ios98.com",
-      "isEnabled": true
+      "isEnabled": true,
+      "presetDirs": [
+        {
+          "path": "/Crack",
+          "title": "Crack",
+          "ipaCount": 67
+        },
+        {
+          "path": "/WeChat",
+          "title": "WeChat",
+          "ipaCount": 15
+        },
+        {
+          "path": "/TrollStore",
+          "title": "TrollStore",
+          "ipaCount": 13
+        },
+        {
+          "path": "/TikTok",
+          "title": "TikTok",
+          "ipaCount": 4
+        }
+      ]
     },
     {
       "id": "alist-mt9s080q",
       "name": "微信源",
       "baseUrl": "https://pan.hbbx.top",
-      "isEnabled": true
+      "isEnabled": true,
+      "presetDirs": [
+        {
+          "path": "/HBB赞助版",
+          "title": "HBB赞助版",
+          "ipaCount": 108
+        },
+        {
+          "path": "/HBB赞助版/插件",
+          "title": "HBB赞助版/插件",
+          "ipaCount": 0
+        },
+        {
+          "path": "/HBB赞助版/安装包",
+          "title": "HBB赞助版/安装包",
+          "ipaCount": 0
+        },
+        {
+          "path": "/HBB赞助版/安装包/8075",
+          "title": "HBB赞助版/安装包/8075",
+          "ipaCount": 0
+        },
+        {
+          "path": "/HBB赞助版/安装包/8074",
+          "title": "HBB赞助版/安装包/8074",
+          "ipaCount": 0
+        },
+        {
+          "path": "/HBB赞助版/安装包/8073",
+          "title": "HBB赞助版/安装包/8073",
+          "ipaCount": 0
+        },
+        {
+          "path": "/HBB赞助版/安装包/8072",
+          "title": "HBB赞助版/安装包/8072",
+          "ipaCount": 0
+        },
+        {
+          "path": "/HBB赞助版/安装包/8071",
+          "title": "HBB赞助版/安装包/8071",
+          "ipaCount": 0
+        },
+        {
+          "path": "/HBB赞助版/安装包/8070",
+          "title": "HBB赞助版/安装包/8070",
+          "ipaCount": 0
+        },
+        {
+          "path": "/HBB赞助版/安装包/8069",
+          "title": "HBB赞助版/安装包/8069",
+          "ipaCount": 0
+        },
+        {
+          "path": "/HBB赞助版/安装包/8068",
+          "title": "HBB赞助版/安装包/8068",
+          "ipaCount": 0
+        },
+        {
+          "path": "/HBB赞助版/安装包/8067",
+          "title": "HBB赞助版/安装包/8067",
+          "ipaCount": 0
+        },
+        {
+          "path": "/HBB赞助版/安装包/8066",
+          "title": "HBB赞助版/安装包/8066",
+          "ipaCount": 0
+        },
+        {
+          "path": "/HBB赞助版/安装包/8065",
+          "title": "HBB赞助版/安装包/8065",
+          "ipaCount": 0
+        },
+        {
+          "path": "/HBB赞助版/安装包/8064",
+          "title": "HBB赞助版/安装包/8064",
+          "ipaCount": 0
+        },
+        {
+          "path": "/HBB赞助版/安装包/8063",
+          "title": "HBB赞助版/安装包/8063",
+          "ipaCount": 0
+        },
+        {
+          "path": "/HBB赞助版/安装包/8062",
+          "title": "HBB赞助版/安装包/8062",
+          "ipaCount": 0
+        },
+        {
+          "path": "/HBB赞助版/安装包/8061",
+          "title": "HBB赞助版/安装包/8061",
+          "ipaCount": 0
+        },
+        {
+          "path": "/HBB赞助版/安装包/8060",
+          "title": "HBB赞助版/安装包/8060",
+          "ipaCount": 0
+        },
+        {
+          "path": "/HBB赞助版/安装包/8059",
+          "title": "HBB赞助版/安装包/8059",
+          "ipaCount": 0
+        },
+        {
+          "path": "/HBB赞助版/安装包/8058",
+          "title": "HBB赞助版/安装包/8058",
+          "ipaCount": 0
+        },
+        {
+          "path": "/HBB赞助版/安装包/8057",
+          "title": "HBB赞助版/安装包/8057",
+          "ipaCount": 0
+        },
+        {
+          "path": "/HBB赞助版/安装包/8056",
+          "title": "HBB赞助版/安装包/8056",
+          "ipaCount": 0
+        },
+        {
+          "path": "/HBB赞助版/安装包/8055",
+          "title": "HBB赞助版/安装包/8055",
+          "ipaCount": 0
+        },
+        {
+          "path": "/HBB赞助版/安装包/8054",
+          "title": "HBB赞助版/安装包/8054",
+          "ipaCount": 0
+        },
+        {
+          "path": "/HBB赞助版/安装包/8053",
+          "title": "HBB赞助版/安装包/8053",
+          "ipaCount": 0
+        },
+        {
+          "path": "/HBB赞助版/安装包/8052",
+          "title": "HBB赞助版/安装包/8052",
+          "ipaCount": 0
+        },
+        {
+          "path": "/HBB赞助版/安装包/8051",
+          "title": "HBB赞助版/安装包/8051",
+          "ipaCount": 0
+        },
+        {
+          "path": "/HBB赞助版/安装包/8050",
+          "title": "HBB赞助版/安装包/8050",
+          "ipaCount": 0
+        },
+        {
+          "path": "/HBB赞助版/安装包/8049",
+          "title": "HBB赞助版/安装包/8049",
+          "ipaCount": 0
+        }
+      ]
     }
   ],
   "blocked_keywords": [
