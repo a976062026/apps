@@ -2011,11 +2011,6 @@
           "ipaCount": 3
         },
         {
-          "path": "/Trollstore/Cowabunga",
-          "title": "Trollstore/Cowabunga",
-          "ipaCount": 3
-        },
-        {
           "path": "/自签/FilzaEscapedDS",
           "title": "自签/FilzaEscapedDS",
           "ipaCount": 3
@@ -2023,6 +2018,11 @@
         {
           "path": "/Trollstore/Purekfd",
           "title": "Trollstore/Purekfd",
+          "ipaCount": 3
+        },
+        {
+          "path": "/Trollstore/Cowabunga",
+          "title": "Trollstore/Cowabunga",
           "ipaCount": 3
         },
         {
@@ -2046,23 +2046,23 @@
           "ipaCount": 2
         },
         {
-          "path": "/自签/debs",
-          "title": "自签/debs",
-          "ipaCount": 2
-        },
-        {
           "path": "/自签/禁提示音",
           "title": "自签/禁提示音",
           "ipaCount": 2
         },
         {
-          "path": "/自签/H5gg",
-          "title": "自签/H5gg",
+          "path": "/自签/debs",
+          "title": "自签/debs",
           "ipaCount": 2
         },
         {
           "path": "/自签/Lara",
           "title": "自签/Lara",
+          "ipaCount": 2
+        },
+        {
+          "path": "/自签/H5gg",
+          "title": "自签/H5gg",
           "ipaCount": 2
         },
         {
@@ -2081,8 +2081,8 @@
           "ipaCount": 2
         },
         {
-          "path": "/自签/动态壁纸设置/3105（手机端）",
-          "title": "自签/动态壁纸设置/3105（手机端）",
+          "path": "/自签/隐藏dock栏和手势/MilkCap一键修改",
+          "title": "自签/隐藏dock栏和手势/MilkCap一键修改",
           "ipaCount": 2
         },
         {
@@ -2091,8 +2091,8 @@
           "ipaCount": 2
         },
         {
-          "path": "/自签/隐藏dock栏和手势/MilkCap一键修改",
-          "title": "自签/隐藏dock栏和手势/MilkCap一键修改",
+          "path": "/自签/动态壁纸设置/3105（手机端）",
+          "title": "自签/动态壁纸设置/3105（手机端）",
           "ipaCount": 2
         },
         {
@@ -2106,13 +2106,18 @@
           "ipaCount": 1
         },
         {
+          "path": "/自签/杀戮尖塔",
+          "title": "自签/杀戮尖塔",
+          "ipaCount": 1
+        },
+        {
           "path": "/自签/金块",
           "title": "自签/金块",
           "ipaCount": 1
         },
         {
-          "path": "/自签/杀戮尖塔",
-          "title": "自签/杀戮尖塔",
+          "path": "/自签/屏蔽更新",
+          "title": "自签/屏蔽更新",
           "ipaCount": 1
         },
         {
@@ -2121,8 +2126,13 @@
           "ipaCount": 1
         },
         {
-          "path": "/自签/屏蔽更新",
-          "title": "自签/屏蔽更新",
+          "path": "/自签/Fliza文件管理器",
+          "title": "自签/Fliza文件管理器",
+          "ipaCount": 1
+        },
+        {
+          "path": "/自签/永久消除通话录音提示音",
+          "title": "自签/永久消除通话录音提示音",
           "ipaCount": 1
         },
         {
@@ -2136,11 +2146,6 @@
           "ipaCount": 1
         },
         {
-          "path": "/自签/Fliza文件管理器",
-          "title": "自签/Fliza文件管理器",
-          "ipaCount": 1
-        },
-        {
           "path": "/Trollstore/电池助手",
           "title": "Trollstore/电池助手",
           "ipaCount": 1
@@ -2151,13 +2156,8 @@
           "ipaCount": 1
         },
         {
-          "path": "/自签/永久消除通话录音提示音",
-          "title": "自签/永久消除通话录音提示音",
-          "ipaCount": 1
-        },
-        {
-          "path": "/越狱工具/Odyssey",
-          "title": "越狱工具/Odyssey",
+          "path": "/越狱工具/Fugu15",
+          "title": "越狱工具/Fugu15",
           "ipaCount": 1
         },
         {
@@ -2166,8 +2166,8 @@
           "ipaCount": 1
         },
         {
-          "path": "/越狱工具/Fugu15",
-          "title": "越狱工具/Fugu15",
+          "path": "/越狱工具/Odyssey",
+          "title": "越狱工具/Odyssey",
           "ipaCount": 1
         },
         {
@@ -2176,8 +2176,8 @@
           "ipaCount": 1
         },
         {
-          "path": "/自签/动态壁纸设置/金块（配合电脑设置iOS17.0+））",
-          "title": "自签/动态壁纸设置/金块（配合电脑设置iOS17.0+））",
+          "path": "/自签/虚拟定位（证书签名）/StikDebug（方法一）",
+          "title": "自签/虚拟定位（证书签名）/StikDebug（方法一）",
           "ipaCount": 1
         },
         {
@@ -2186,8 +2186,8 @@
           "ipaCount": 1
         },
         {
-          "path": "/自签/虚拟定位（证书签名）/StikDebug（方法一）",
-          "title": "自签/虚拟定位（证书签名）/StikDebug（方法一）",
+          "path": "/自签/动态壁纸设置/金块（配合电脑设置iOS17.0+））",
+          "title": "自签/动态壁纸设置/金块（配合电脑设置iOS17.0+））",
           "ipaCount": 1
         },
         {
@@ -2224,13 +2224,13 @@
           "ipaCount": 3
         },
         {
-          "path": "/巨魔/轻松及全能",
-          "title": "巨魔/轻松及全能",
+          "path": "/巨魔/巨魔修改器",
+          "title": "巨魔/巨魔修改器",
           "ipaCount": 2
         },
         {
-          "path": "/巨魔/巨魔修改器",
-          "title": "巨魔/巨魔修改器",
+          "path": "/巨魔/轻松及全能",
+          "title": "巨魔/轻松及全能",
           "ipaCount": 2
         },
         {
@@ -2277,8 +2277,8 @@
           "ipaCount": 4
         },
         {
-          "path": "/WeChat/纯净版带推送/8071",
-          "title": "WeChat/纯净版带推送/8071",
+          "path": "/WeChat/纯净版带推送/8069",
+          "title": "WeChat/纯净版带推送/8069",
           "ipaCount": 4
         },
         {
@@ -2292,13 +2292,13 @@
           "ipaCount": 4
         },
         {
-          "path": "/WeChat/纯净版带推送/8069",
-          "title": "WeChat/纯净版带推送/8069",
+          "path": "/WeChat/纯净版带推送/8068",
+          "title": "WeChat/纯净版带推送/8068",
           "ipaCount": 4
         },
         {
-          "path": "/WeChat/纯净版带推送/8068",
-          "title": "WeChat/纯净版带推送/8068",
+          "path": "/WeChat/纯净版带推送/8071",
+          "title": "WeChat/纯净版带推送/8071",
           "ipaCount": 4
         },
         {
