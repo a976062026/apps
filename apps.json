@@ -1822,9 +1822,89 @@
       "isEnabled": true,
       "presetDirs": [
         {
+          "path": "/苹果应用/微信系列",
+          "title": "苹果应用/微信系列",
+          "ipaCount": 86
+        },
+        {
+          "path": "/苹果应用/工具杂项",
+          "title": "苹果应用/工具杂项",
+          "ipaCount": 64
+        },
+        {
+          "path": "/苹果应用/阅读学习",
+          "title": "苹果应用/阅读学习",
+          "ipaCount": 62
+        },
+        {
+          "path": "/苹果应用/短视频+影视",
+          "title": "苹果应用/短视频+影视",
+          "ipaCount": 59
+        },
+        {
+          "path": "/苹果应用/相机+修图",
+          "title": "苹果应用/相机+修图",
+          "ipaCount": 56
+        },
+        {
           "path": "/巨魔专用工具",
           "title": "巨魔专用工具",
           "ipaCount": 44
+        },
+        {
+          "path": "/苹果应用/社交平台",
+          "title": "苹果应用/社交平台",
+          "ipaCount": 13
+        },
+        {
+          "path": "/其它/越狱工具",
+          "title": "其它/越狱工具",
+          "ipaCount": 13
+        },
+        {
+          "path": "/苹果应用/财务记账",
+          "title": "苹果应用/财务记账",
+          "ipaCount": 11
+        },
+        {
+          "path": "/苹果应用/办公软件",
+          "title": "苹果应用/办公软件",
+          "ipaCount": 8
+        },
+        {
+          "path": "/苹果应用/网购系列",
+          "title": "苹果应用/网购系列",
+          "ipaCount": 5
+        },
+        {
+          "path": "/苹果应用/音乐合集",
+          "title": "苹果应用/音乐合集",
+          "ipaCount": 4
+        },
+        {
+          "path": "/苹果应用/百度系列",
+          "title": "苹果应用/百度系列",
+          "ipaCount": 4
+        },
+        {
+          "path": "/苹果应用/轻松签安装包",
+          "title": "苹果应用/轻松签安装包",
+          "ipaCount": 1
+        },
+        {
+          "path": "/苹果应用/QQ系列",
+          "title": "苹果应用/QQ系列",
+          "ipaCount": 1
+        },
+        {
+          "path": "/其它/微商版微信",
+          "title": "其它/微商版微信",
+          "ipaCount": 1
+        },
+        {
+          "path": "/其它/大名专用/00008140-000E34A23611801C",
+          "title": "其它/大名专用/00008140-000E34A23611801C",
+          "ipaCount": 1
         }
       ]
     },
@@ -1851,9 +1931,269 @@
           "ipaCount": 17
         },
         {
+          "path": "/自签/植物大战僵尸",
+          "title": "自签/植物大战僵尸",
+          "ipaCount": 17
+        },
+        {
+          "path": "/越狱工具/Relaxin",
+          "title": "越狱工具/Relaxin",
+          "ipaCount": 11
+        },
+        {
+          "path": "/自签/降级app",
+          "title": "自签/降级app",
+          "ipaCount": 10
+        },
+        {
+          "path": "/Trollstore/巨魔安装器",
+          "title": "Trollstore/巨魔安装器",
+          "ipaCount": 10
+        },
+        {
+          "path": "/越狱工具/Dopamine2",
+          "title": "越狱工具/Dopamine2",
+          "ipaCount": 10
+        },
+        {
+          "path": "/越狱工具/多巴胺3",
+          "title": "越狱工具/多巴胺3",
+          "ipaCount": 8
+        },
+        {
+          "path": "/越狱工具/xina",
+          "title": "越狱工具/xina",
+          "ipaCount": 8
+        },
+        {
           "path": "/签名工具",
           "title": "签名工具",
           "ipaCount": 7
+        },
+        {
+          "path": "/自签/隐藏dock栏和手势/dirtyZero",
+          "title": "自签/隐藏dock栏和手势/dirtyZero",
+          "ipaCount": 7
+        },
+        {
+          "path": "/Trollstore/巨魔网速显示",
+          "title": "Trollstore/巨魔网速显示",
+          "ipaCount": 6
+        },
+        {
+          "path": "/越狱工具/Taurine",
+          "title": "越狱工具/Taurine",
+          "ipaCount": 5
+        },
+        {
+          "path": "/越狱工具/unc0ver",
+          "title": "越狱工具/unc0ver",
+          "ipaCount": 5
+        },
+        {
+          "path": "/自签/全局高刷",
+          "title": "自签/全局高刷",
+          "ipaCount": 4
+        },
+        {
+          "path": "/Trollstore/巨魔清理工具",
+          "title": "Trollstore/巨魔清理工具",
+          "ipaCount": 4
+        },
+        {
+          "path": "/Trollstore/虚拟dw",
+          "title": "Trollstore/虚拟dw",
+          "ipaCount": 4
+        },
+        {
+          "path": "/自签/锤子三件套",
+          "title": "自签/锤子三件套",
+          "ipaCount": 3
+        },
+        {
+          "path": "/Trollstore/Cowabunga",
+          "title": "Trollstore/Cowabunga",
+          "ipaCount": 3
+        },
+        {
+          "path": "/自签/FilzaEscapedDS",
+          "title": "自签/FilzaEscapedDS",
+          "ipaCount": 3
+        },
+        {
+          "path": "/Trollstore/Purekfd",
+          "title": "Trollstore/Purekfd",
+          "ipaCount": 3
+        },
+        {
+          "path": "/越狱工具/NekoJB",
+          "title": "越狱工具/NekoJB",
+          "ipaCount": 3
+        },
+        {
+          "path": "/越狱工具/Chimera",
+          "title": "越狱工具/Chimera",
+          "ipaCount": 3
+        },
+        {
+          "path": "/自签/隐藏dock栏和手势/mdc0",
+          "title": "自签/隐藏dock栏和手势/mdc0",
+          "ipaCount": 3
+        },
+        {
+          "path": "/自签/filza",
+          "title": "自签/filza",
+          "ipaCount": 2
+        },
+        {
+          "path": "/自签/debs",
+          "title": "自签/debs",
+          "ipaCount": 2
+        },
+        {
+          "path": "/自签/禁提示音",
+          "title": "自签/禁提示音",
+          "ipaCount": 2
+        },
+        {
+          "path": "/自签/H5gg",
+          "title": "自签/H5gg",
+          "ipaCount": 2
+        },
+        {
+          "path": "/自签/Lara",
+          "title": "自签/Lara",
+          "ipaCount": 2
+        },
+        {
+          "path": "/自签/GBA模拟器",
+          "title": "自签/GBA模拟器",
+          "ipaCount": 2
+        },
+        {
+          "path": "/Trollstore/TrollOpen扇形悬浮窗",
+          "title": "Trollstore/TrollOpen扇形悬浮窗",
+          "ipaCount": 2
+        },
+        {
+          "path": "/Trollstore/鬼脸安装器",
+          "title": "Trollstore/鬼脸安装器",
+          "ipaCount": 2
+        },
+        {
+          "path": "/自签/动态壁纸设置/3105（手机端）",
+          "title": "自签/动态壁纸设置/3105（手机端）",
+          "ipaCount": 2
+        },
+        {
+          "path": "/自签/隐藏dock栏和手势/一键注销",
+          "title": "自签/隐藏dock栏和手势/一键注销",
+          "ipaCount": 2
+        },
+        {
+          "path": "/自签/隐藏dock栏和手势/MilkCap一键修改",
+          "title": "自签/隐藏dock栏和手势/MilkCap一键修改",
+          "ipaCount": 2
+        },
+        {
+          "path": "/Trollstore/通话录音/AudioRecorder",
+          "title": "Trollstore/通话录音/AudioRecorder",
+          "ipaCount": 2
+        },
+        {
+          "path": "/自签/听歌",
+          "title": "自签/听歌",
+          "ipaCount": 1
+        },
+        {
+          "path": "/自签/金块",
+          "title": "自签/金块",
+          "ipaCount": 1
+        },
+        {
+          "path": "/自签/杀戮尖塔",
+          "title": "自签/杀戮尖塔",
+          "ipaCount": 1
+        },
+        {
+          "path": "/自签/提取图标",
+          "title": "自签/提取图标",
+          "ipaCount": 1
+        },
+        {
+          "path": "/自签/屏蔽更新",
+          "title": "自签/屏蔽更新",
+          "ipaCount": 1
+        },
+        {
+          "path": "/Trollstore/脱壳降级",
+          "title": "Trollstore/脱壳降级",
+          "ipaCount": 1
+        },
+        {
+          "path": "/Trollstore/trollwatcher扇形悬浮窗",
+          "title": "Trollstore/trollwatcher扇形悬浮窗",
+          "ipaCount": 1
+        },
+        {
+          "path": "/自签/Fliza文件管理器",
+          "title": "自签/Fliza文件管理器",
+          "ipaCount": 1
+        },
+        {
+          "path": "/Trollstore/电池助手",
+          "title": "Trollstore/电池助手",
+          "ipaCount": 1
+        },
+        {
+          "path": "/Trollstore/电话助手(ios15)",
+          "title": "Trollstore/电话助手(ios15)",
+          "ipaCount": 1
+        },
+        {
+          "path": "/自签/永久消除通话录音提示音",
+          "title": "自签/永久消除通话录音提示音",
+          "ipaCount": 1
+        },
+        {
+          "path": "/越狱工具/Odyssey",
+          "title": "越狱工具/Odyssey",
+          "ipaCount": 1
+        },
+        {
+          "path": "/越狱工具/Dopamine",
+          "title": "越狱工具/Dopamine",
+          "ipaCount": 1
+        },
+        {
+          "path": "/越狱工具/Fugu15",
+          "title": "越狱工具/Fugu15",
+          "ipaCount": 1
+        },
+        {
+          "path": "/Windows/Nugget金块",
+          "title": "Windows/Nugget金块",
+          "ipaCount": 1
+        },
+        {
+          "path": "/自签/动态壁纸设置/金块（配合电脑设置iOS17.0+））",
+          "title": "自签/动态壁纸设置/金块（配合电脑设置iOS17.0+））",
+          "ipaCount": 1
+        },
+        {
+          "path": "/自签/虚拟定位（证书签名）/Locus_1.0.2_虚拟定位汉化增强",
+          "title": "自签/虚拟定位（证书签名）/Locus_1.0.2_虚拟定位汉化增强",
+          "ipaCount": 1
+        },
+        {
+          "path": "/自签/虚拟定位（证书签名）/StikDebug（方法一）",
+          "title": "自签/虚拟定位（证书签名）/StikDebug（方法一）",
+          "ipaCount": 1
+        },
+        {
+          "path": "/Trollstore/TrollFools巨魔应用注入器/巨魔注入器SLP修改版",
+          "title": "Trollstore/TrollFools巨魔应用注入器/巨魔注入器SLP修改版",
+          "ipaCount": 1
         }
       ]
     },
@@ -1877,6 +2217,36 @@
           "path": "/巨魔",
           "title": "巨魔",
           "ipaCount": 4
+        },
+        {
+          "path": "/巨魔/应用降级",
+          "title": "巨魔/应用降级",
+          "ipaCount": 3
+        },
+        {
+          "path": "/巨魔/轻松及全能",
+          "title": "巨魔/轻松及全能",
+          "ipaCount": 2
+        },
+        {
+          "path": "/巨魔/巨魔修改器",
+          "title": "巨魔/巨魔修改器",
+          "ipaCount": 2
+        },
+        {
+          "path": "/巨魔/文件管理器",
+          "title": "巨魔/文件管理器",
+          "ipaCount": 1
+        },
+        {
+          "path": "/巨魔/巨魔录音器",
+          "title": "巨魔/巨魔录音器",
+          "ipaCount": 1
+        },
+        {
+          "path": "/巨魔/巨魔安装器/安装器",
+          "title": "巨魔/巨魔安装器/安装器",
+          "ipaCount": 1
         }
       ]
     },
@@ -1905,6 +2275,46 @@
           "path": "/TikTok",
           "title": "TikTok",
           "ipaCount": 4
+        },
+        {
+          "path": "/WeChat/纯净版带推送/8071",
+          "title": "WeChat/纯净版带推送/8071",
+          "ipaCount": 4
+        },
+        {
+          "path": "/WeChat/纯净版带推送/8067",
+          "title": "WeChat/纯净版带推送/8067",
+          "ipaCount": 4
+        },
+        {
+          "path": "/WeChat/纯净版带推送/8070",
+          "title": "WeChat/纯净版带推送/8070",
+          "ipaCount": 4
+        },
+        {
+          "path": "/WeChat/纯净版带推送/8069",
+          "title": "WeChat/纯净版带推送/8069",
+          "ipaCount": 4
+        },
+        {
+          "path": "/WeChat/纯净版带推送/8068",
+          "title": "WeChat/纯净版带推送/8068",
+          "ipaCount": 4
+        },
+        {
+          "path": "/WeChat/纯净版带推送/8072",
+          "title": "WeChat/纯净版带推送/8072",
+          "ipaCount": 4
+        },
+        {
+          "path": "/WeChat/阿凡达",
+          "title": "WeChat/阿凡达",
+          "ipaCount": 3
+        },
+        {
+          "path": "/TrollStore/AppsManager",
+          "title": "TrollStore/AppsManager",
+          "ipaCount": 1
         }
       ]
     },
