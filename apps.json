@@ -6,7 +6,474 @@
       "id": "alist-mt9qq00a",
       "name": "源1",
       "baseUrl": "https://pan.iosxn.cn",
-      "isEnabled": true
+      "isEnabled": true,
+      "presetDirs": [
+        {
+          "path": "/其他资源/03",
+          "title": "其他资源/03",
+          "ipaCount": 1498
+        },
+        {
+          "path": "/ipa资源/破姐应用⑤",
+          "title": "ipa资源/破姐应用⑤",
+          "ipaCount": 582
+        },
+        {
+          "path": "/ipa资源/破姐应用②",
+          "title": "ipa资源/破姐应用②",
+          "ipaCount": 566
+        },
+        {
+          "path": "/ipa资源/破姐应用③",
+          "title": "ipa资源/破姐应用③",
+          "ipaCount": 541
+        },
+        {
+          "path": "/ipa资源/破姐应用④",
+          "title": "ipa资源/破姐应用④",
+          "ipaCount": 510
+        },
+        {
+          "path": "/ipa资源/破姐应用①",
+          "title": "ipa资源/破姐应用①",
+          "ipaCount": 332
+        },
+        {
+          "path": "/ipa资源/破姐应用⑥",
+          "title": "ipa资源/破姐应用⑥",
+          "ipaCount": 217
+        },
+        {
+          "path": "/ipa资源/纯净砸壳",
+          "title": "ipa资源/纯净砸壳",
+          "ipaCount": 183
+        },
+        {
+          "path": "/ipa资源/YouTube",
+          "title": "ipa资源/YouTube",
+          "ipaCount": 95
+        },
+        {
+          "path": "/ipa资源/抖音",
+          "title": "ipa资源/抖音",
+          "ipaCount": 87
+        },
+        {
+          "path": "/ipa资源/小说听书",
+          "title": "ipa资源/小说听书",
+          "ipaCount": 84
+        },
+        {
+          "path": "/ipa资源/TikTok",
+          "title": "ipa资源/TikTok",
+          "ipaCount": 70
+        },
+        {
+          "path": "/ipa资源/X（推特）",
+          "title": "ipa资源/X（推特）",
+          "ipaCount": 68
+        },
+        {
+          "path": "/ipa资源/小红书",
+          "title": "ipa资源/小红书",
+          "ipaCount": 57
+        },
+        {
+          "path": "/微信专区/微信砸壳",
+          "title": "微信专区/微信砸壳",
+          "ipaCount": 57
+        },
+        {
+          "path": "/ipa资源/音乐",
+          "title": "ipa资源/音乐",
+          "ipaCount": 45
+        },
+        {
+          "path": "/ipa资源/游戏娱乐",
+          "title": "ipa资源/游戏娱乐",
+          "ipaCount": 45
+        },
+        {
+          "path": "/ipa资源/作图工具",
+          "title": "ipa资源/作图工具",
+          "ipaCount": 42
+        },
+        {
+          "path": "/ipa资源/misaka（15.0-16.7.2）",
+          "title": "ipa资源/misaka（15.0-16.7.2）",
+          "ipaCount": 40
+        },
+        {
+          "path": "/ipa资源/Instagram",
+          "title": "ipa资源/Instagram",
+          "ipaCount": 38
+        },
+        {
+          "path": "/巨魔专区",
+          "title": "巨魔专区",
+          "ipaCount": 34
+        },
+        {
+          "path": "/ipa资源/QQ",
+          "title": "ipa资源/QQ",
+          "ipaCount": 33
+        },
+        {
+          "path": "/ipa资源/快手",
+          "title": "ipa资源/快手",
+          "ipaCount": 31
+        },
+        {
+          "path": "/ipa资源/soul",
+          "title": "ipa资源/soul",
+          "ipaCount": 30
+        },
+        {
+          "path": "/ipa资源/其他工具",
+          "title": "ipa资源/其他工具",
+          "ipaCount": 25
+        },
+        {
+          "path": "/ipa资源/高德地图",
+          "title": "ipa资源/高德地图",
+          "ipaCount": 23
+        },
+        {
+          "path": "/ipa资源/free",
+          "title": "ipa资源/free",
+          "ipaCount": 21
+        },
+        {
+          "path": "/巨魔专区/代理工具",
+          "title": "巨魔专区/代理工具",
+          "ipaCount": 21
+        },
+        {
+          "path": "/ipa资源/百度地图",
+          "title": "ipa资源/百度地图",
+          "ipaCount": 19
+        },
+        {
+          "path": "/巨魔专区/科学上网",
+          "title": "巨魔专区/科学上网",
+          "ipaCount": 18
+        },
+        {
+          "path": "/ipa资源/视频剪辑",
+          "title": "ipa资源/视频剪辑",
+          "ipaCount": 17
+        },
+        {
+          "path": "/ipa资源/lara（iOS16.0-26.0.1）",
+          "title": "ipa资源/lara（iOS16.0-26.0.1）",
+          "ipaCount": 11
+        },
+        {
+          "path": "/巨魔专区/降级工具",
+          "title": "巨魔专区/降级工具",
+          "ipaCount": 11
+        },
+        {
+          "path": "/ipa资源/Telegram",
+          "title": "ipa资源/Telegram",
+          "ipaCount": 10
+        },
+        {
+          "path": "/ipa资源/下载deb提取dylib",
+          "title": "ipa资源/下载deb提取dylib",
+          "ipaCount": 10
+        },
+        {
+          "path": "/ipa资源/隐藏dock和小横条和文件夹背景",
+          "title": "ipa资源/隐藏dock和小横条和文件夹背景",
+          "ipaCount": 10
+        },
+        {
+          "path": "/巨魔专区/王者视距",
+          "title": "巨魔专区/王者视距",
+          "ipaCount": 9
+        },
+        {
+          "path": "/巨魔专区/下载deb提取dylib",
+          "title": "巨魔专区/下载deb提取dylib",
+          "ipaCount": 9
+        },
+        {
+          "path": "/巨魔专区/电话助手",
+          "title": "巨魔专区/电话助手",
+          "ipaCount": 9
+        },
+        {
+          "path": "/ipa资源/降级APP",
+          "title": "ipa资源/降级APP",
+          "ipaCount": 8
+        },
+        {
+          "path": "/巨魔专区/虚拟定位",
+          "title": "巨魔专区/虚拟定位",
+          "ipaCount": 8
+        },
+        {
+          "path": "/巨魔专区/巨魔2安装工具",
+          "title": "巨魔专区/巨魔2安装工具",
+          "ipaCount": 8
+        },
+        {
+          "path": "/ipa资源/皮皮虾",
+          "title": "ipa资源/皮皮虾",
+          "ipaCount": 6
+        },
+        {
+          "path": "/巨魔专区/提取car文件",
+          "title": "巨魔专区/提取car文件",
+          "ipaCount": 6
+        },
+        {
+          "path": "/巨魔专区/隐藏dock和小横条和文件夹背景",
+          "title": "巨魔专区/隐藏dock和小横条和文件夹背景",
+          "ipaCount": 6
+        },
+        {
+          "path": "/ipa资源/签名工具",
+          "title": "ipa资源/签名工具",
+          "ipaCount": 5
+        },
+        {
+          "path": "/ipa资源/奶牛（15-15.7.1  16-16.1.2）",
+          "title": "ipa资源/奶牛（15-15.7.1  16-16.1.2）",
+          "ipaCount": 5
+        },
+        {
+          "path": "/ipa资源/不限制",
+          "title": "ipa资源/不限制",
+          "ipaCount": 5
+        },
+        {
+          "path": "/巨魔专区/悬浮网速",
+          "title": "巨魔专区/悬浮网速",
+          "ipaCount": 5
+        },
+        {
+          "path": "/巨魔专区/输入法内购",
+          "title": "巨魔专区/输入法内购",
+          "ipaCount": 5
+        },
+        {
+          "path": "/ipa资源/全局高刷",
+          "title": "ipa资源/全局高刷",
+          "ipaCount": 4
+        },
+        {
+          "path": "/ipa资源/cyanide（iOS17.0-18.7.1  26.0-26.0.1）",
+          "title": "ipa资源/cyanide（iOS17.0-18.7.1  26.0-26.0.1）",
+          "ipaCount": 4
+        },
+        {
+          "path": "/ipa资源/Filza（iOS17.0-26.0.1）",
+          "title": "ipa资源/Filza（iOS17.0-26.0.1）",
+          "ipaCount": 4
+        },
+        {
+          "path": "/巨魔专区/提取越狱插件",
+          "title": "巨魔专区/提取越狱插件",
+          "ipaCount": 4
+        },
+        {
+          "path": "/巨魔专区/巨魔小扫把",
+          "title": "巨魔专区/巨魔小扫把",
+          "ipaCount": 4
+        },
+        {
+          "path": "/巨魔专区/巨魔版分屏",
+          "title": "巨魔专区/巨魔版分屏",
+          "ipaCount": 4
+        },
+        {
+          "path": "/ipa资源/应用降级（iOS17.0-18.7.1  26.0-26.0.1）",
+          "title": "ipa资源/应用降级（iOS17.0-18.7.1  26.0-26.0.1）",
+          "ipaCount": 3
+        },
+        {
+          "path": "/ipa资源/whatsapp",
+          "title": "ipa资源/whatsapp",
+          "ipaCount": 2
+        },
+        {
+          "path": "/ipa资源/支付宝",
+          "title": "ipa资源/支付宝",
+          "ipaCount": 2
+        },
+        {
+          "path": "/ipa资源/分屏（iOS17.0-18.7.1  26.0-26.0.1）",
+          "title": "ipa资源/分屏（iOS17.0-18.7.1  26.0-26.0.1）",
+          "ipaCount": 2
+        },
+        {
+          "path": "/ipa资源/kfun修改器（iOS17.0-18.7.1  26.0-26.0.1）",
+          "title": "ipa资源/kfun修改器（iOS17.0-18.7.1  26.0-26.0.1）",
+          "ipaCount": 2
+        },
+        {
+          "path": "/ipa资源/淘宝",
+          "title": "ipa资源/淘宝",
+          "ipaCount": 2
+        },
+        {
+          "path": "/巨魔专区/Filza破解完整版",
+          "title": "巨魔专区/Filza破解完整版",
+          "ipaCount": 2
+        },
+        {
+          "path": "/巨魔专区/电池助手",
+          "title": "巨魔专区/电池助手",
+          "ipaCount": 2
+        },
+        {
+          "path": "/巨魔专区/灵动岛美化",
+          "title": "巨魔专区/灵动岛美化",
+          "ipaCount": 2
+        },
+        {
+          "path": "/巨魔专区/快捷跳转应用工具",
+          "title": "巨魔专区/快捷跳转应用工具",
+          "ipaCount": 2
+        },
+        {
+          "path": "/巨魔专区/图标库",
+          "title": "巨魔专区/图标库",
+          "ipaCount": 2
+        },
+        {
+          "path": "/ipa资源/网速显示（支持iOS 16.x iOS17.0-18.6 iOS 26.0-26.0.1）",
+          "title": "ipa资源/网速显示（支持iOS 16.x iOS17.0-18.6 iOS 26.0-26.0.1）",
+          "ipaCount": 1
+        },
+        {
+          "path": "/ipa资源/虚拟定位（iOS18-27）",
+          "title": "ipa资源/虚拟定位（iOS18-27）",
+          "ipaCount": 1
+        },
+        {
+          "path": "/ipa资源/小车投屏壁纸（iOS17.0-18.7.1  26.0-26.0.1）",
+          "title": "ipa资源/小车投屏壁纸（iOS17.0-18.7.1  26.0-26.0.1）",
+          "ipaCount": 1
+        },
+        {
+          "path": "/ipa资源/Tonedit（iOS17.0-18.7.1  26.0-26.0.1）",
+          "title": "ipa资源/Tonedit（iOS17.0-18.7.1  26.0-26.0.1）",
+          "ipaCount": 1
+        },
+        {
+          "path": "/ipa资源/Fontfix（iOS17.0-18.7.1  26.0-26.0.1）",
+          "title": "ipa资源/Fontfix（iOS17.0-18.7.1  26.0-26.0.1）",
+          "ipaCount": 1
+        },
+        {
+          "path": "/ipa资源/Cyanide（iOS17.0-18.7.1 26.0-26.0.1）",
+          "title": "ipa资源/Cyanide（iOS17.0-18.7.1 26.0-26.0.1）",
+          "ipaCount": 1
+        },
+        {
+          "path": "/ipa资源/虚拟定位（iOS17.4-26.5）",
+          "title": "ipa资源/虚拟定位（iOS17.4-26.5）",
+          "ipaCount": 1
+        },
+        {
+          "path": "/ipa资源/清理缓存工具（iOS17.0-18.7.1 iOS26.0-26.0.1）",
+          "title": "ipa资源/清理缓存工具（iOS17.0-18.7.1 iOS26.0-26.0.1）",
+          "ipaCount": 1
+        },
+        {
+          "path": "/ipa资源/FontChanger",
+          "title": "ipa资源/FontChanger",
+          "ipaCount": 1
+        },
+        {
+          "path": "/ipa资源/宝宝巴士",
+          "title": "ipa资源/宝宝巴士",
+          "ipaCount": 1
+        },
+        {
+          "path": "/越狱专区/越狱工具",
+          "title": "越狱专区/越狱工具",
+          "ipaCount": 1
+        },
+        {
+          "path": "/巨魔专区/巨魔安装工具（iOS15.7.2-15.8.x）",
+          "title": "巨魔专区/巨魔安装工具（iOS15.7.2-15.8.x）",
+          "ipaCount": 1
+        },
+        {
+          "path": "/巨魔专区/17.0安装巨魔（无需电脑）",
+          "title": "巨魔专区/17.0安装巨魔（无需电脑）",
+          "ipaCount": 1
+        },
+        {
+          "path": "/巨魔专区/Apps Manager",
+          "title": "巨魔专区/Apps Manager",
+          "ipaCount": 1
+        },
+        {
+          "path": "/巨魔专区/区域截图",
+          "title": "巨魔专区/区域截图",
+          "ipaCount": 1
+        },
+        {
+          "path": "/巨魔专区/插件开发工具",
+          "title": "巨魔专区/插件开发工具",
+          "ipaCount": 1
+        },
+        {
+          "path": "/巨魔专区/ui动画加速",
+          "title": "巨魔专区/ui动画加速",
+          "ipaCount": 1
+        },
+        {
+          "path": "/巨魔专区/新半越狱工具",
+          "title": "巨魔专区/新半越狱工具",
+          "ipaCount": 1
+        },
+        {
+          "path": "/巨魔专区/QPE助手（卡贴机专用）",
+          "title": "巨魔专区/QPE助手（卡贴机专用）",
+          "ipaCount": 1
+        },
+        {
+          "path": "/巨魔专区/角标（14-15.4.1）",
+          "title": "巨魔专区/角标（14-15.4.1）",
+          "ipaCount": 1
+        },
+        {
+          "path": "/巨魔专区/iGBA游戏模拟器",
+          "title": "巨魔专区/iGBA游戏模拟器",
+          "ipaCount": 1
+        },
+        {
+          "path": "/巨魔专区/通话录音",
+          "title": "巨魔专区/通话录音",
+          "ipaCount": 1
+        },
+        {
+          "path": "/巨魔专区/制作多开工具",
+          "title": "巨魔专区/制作多开工具",
+          "ipaCount": 1
+        },
+        {
+          "path": "/巨魔专区/Delta游戏模拟器",
+          "title": "巨魔专区/Delta游戏模拟器",
+          "ipaCount": 1
+        },
+        {
+          "path": "/巨魔专区/铃声助手",
+          "title": "巨魔专区/铃声助手",
+          "ipaCount": 1
+        },
+        {
+          "path": "/屏蔽系统/iOS15.0-18.7.1 26.0-26.0.1（不支持iPhone17）",
+          "title": "屏蔽系统/iOS15.0-18.7.1 26.0-26.0.1（不支持iPhone17）",
+          "ipaCount": 1
+        }
+      ]
     },
     {
       "id": "alist-mt9qqa0v",
