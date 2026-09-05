@@ -457,6 +457,26 @@
           "path": "/屏蔽系统/iOS15.0-18.7.1 26.0-26.0.1（不支持iPhone17）",
           "title": "屏蔽系统/iOS15.0-18.7.1 26.0-26.0.1（不支持iPhone17）",
           "ipaCount": 1
+        },
+        {
+          "path": "/ipa资源/京东",
+          "title": "ipa资源/京东",
+          "ipaCount": 11
+        },
+        {
+          "path": "/ipa资源/改全局字体",
+          "title": "ipa资源/改全局字体",
+          "ipaCount": 8
+        },
+        {
+          "path": "/ipa资源/禁用通话录音提示音（iOS18.1-26.0.1）",
+          "title": "ipa资源/禁用通话录音提示音（iOS18.1-26.0.1）",
+          "ipaCount": 3
+        },
+        {
+          "path": "/ipa资源/虚拟定位（iOS17.4-26.3）",
+          "title": "ipa资源/虚拟定位（iOS17.4-26.3）",
+          "ipaCount": 1
         }
       ]
     },
