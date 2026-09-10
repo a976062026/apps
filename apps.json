@@ -2220,6 +2220,13 @@
           "ipaCount": 0
         }
       ]
+    },
+    {
+      "id": "alist-1789047238769",
+      "name": "源7",
+      "baseUrl": "https://iossq.top",
+      "isEnabled": true,
+      "presetDirs": []
     }
   ],
   "blocked_keywords": [
