@@ -3442,6 +3442,16 @@
           "title": "软件分类/签名工具/轻松签",
           "ipaCount": 4
         }
+      ],
+      "pathMappings": [
+        {
+          "displayPrefix": "/常用软件",
+          "remotePrefix": "/苹果/巨魔玩家"
+        },
+        {
+          "displayPrefix": "/软件分类",
+          "remotePrefix": "/苹果"
+        }
       ]
     }
   ],
