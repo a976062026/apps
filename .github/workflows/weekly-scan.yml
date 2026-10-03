@@ -1,0 +1,35 @@
+name: Weekly source scan
+
+on:
+  schedule:
+    - cron: "0 3 * * 1"   # 每周一 03:00 UTC = 北京 11:00
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Scan sources & auto-fix whitelist gaps
+        run: python scripts/scan_sources.py
+
+      - name: Commit if apps.json / baseline changed
+        run: |
+          git config user.name "auto-scan-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add apps.json baseline.json scan-report.md
+          if git diff --cached --quiet; then
+            echo "No changes"
+          else
+            git commit -m "每周源巡检: 自动补白名单缺口 (scan $(date -u +%F))"
+            git push
+          fi
