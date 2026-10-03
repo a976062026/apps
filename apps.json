@@ -1557,6 +1557,45 @@
           "path": "/微信专区/微信官替/全权限官替",
           "title": "微信专区/微信官替/全权限官替",
           "ipaCount": 98
+        },
+        {
+          "path": "/ipa资源/3105"
+        },
+        {
+          "path": "/其他资源/01/巨魔注入/InjectWe"
+        },
+        {
+          "path": "/微信专区/微信多开/纯净多开/8079"
+        },
+        {
+          "path": "/其他资源/01/巨魔注入/TrollFools/huami版"
+        },
+        {
+          "path": "/微信专区/微信多开/纯净多开/8078"
+        },
+        {
+          "path": "/其他资源/06/8078"
+        },
+        {
+          "path": "/其他资源/01/巨魔注入/TrollFools/官方版"
+        },
+        {
+          "path": "/ipa资源/FilzaJailedDS"
+        },
+        {
+          "path": "/ipa资源/歌一刀"
+        },
+        {
+          "path": "/ipa资源/读一刀"
+        },
+        {
+          "path": "/其他资源/01/巨魔注入/TrollFools/iosdump版"
+        },
+        {
+          "path": "/ipa资源/MiniWatts"
+        },
+        {
+          "path": "/其他资源/06/8079"
         }
       ]
     },
@@ -3167,6 +3206,33 @@
           "path": "/Trollstore/TrollFools巨魔应用注入器/巨魔注入器SLP修改版",
           "title": "Trollstore/TrollFools巨魔应用注入器/巨魔注入器SLP修改版",
           "ipaCount": 1
+        },
+        {
+          "path": "/IPCC"
+        },
+        {
+          "path": "/Trollstore/通话录音/NiceCaller"
+        },
+        {
+          "path": "/Trollstore/TrollFools巨魔应用注入器/巨魔注入器dump版"
+        },
+        {
+          "path": "/越狱工具/Fugu15公测版"
+        },
+        {
+          "path": "/Trollstore/TrollFools巨魔应用注入器/TrollFools huami版"
+        },
+        {
+          "path": "/越狱工具/Bootstrap"
+        },
+        {
+          "path": "/Trollstore/TrollFools巨魔应用注入器/TrollFools官方版"
+        },
+        {
+          "path": "/越狱工具/Bootstrap半越狱"
+        },
+        {
+          "path": "/越狱工具/NathanLR"
         }
       ]
     },
@@ -3578,5 +3644,14 @@
     "手机壁纸",
     "快捷指令",
     "小昕网盘"
+  ],
+  "scan_exclusions": [
+    {
+      "source": "微信源",
+      "paths": [
+        "/全权限注入工具",
+        "/空白应用"
+      ]
+    }
   ]
 }
