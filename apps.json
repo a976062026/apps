@@ -1600,6 +1600,18 @@
         {
           "path": "/巨魔专区/巨魔注入",
           "inherit": true
+        },
+        {
+          "path": "/ipa资源/AirBeep"
+        },
+        {
+          "path": "/ipa资源/AppRetro证书版"
+        },
+        {
+          "path": "/ipa资源/禁用录音提示音（iOS18.0-27.2 b2）"
+        },
+        {
+          "path": "/ipa资源/闲鱼"
         }
       ]
     },
