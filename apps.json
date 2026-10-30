@@ -2018,7 +2018,17 @@
           "title": "苹果/巨魔玩家/Aemulo【NFC模拟】",
           "ipaCount": 1
         },
+                {
+          "path": "/苹果/巨魔玩家/AirBeep【禁用通话提示音】",
+          "title": "苹果/巨魔玩家/AirBeep【禁用通话提示音】",
+          "ipaCount": 3
+        },
         {
+          "path": "/苹果/巨魔玩家/AirliftSilence【禁用通话提示音】",
+          "title": "苹果/巨魔玩家/AirliftSilence【禁用通话提示音】",
+          "ipaCount": 2
+        },
+{
           "path": "/苹果/巨魔玩家/AlDente【电池助手】",
           "title": "苹果/巨魔玩家/AlDente【电池助手】",
           "ipaCount": 2
@@ -2178,7 +2188,12 @@
           "title": "苹果/巨魔玩家/Erosion【自定义调整集合】",
           "ipaCount": 2
         },
-        {
+                {
+          "path": "/苹果/巨魔玩家/Erosion【沙盒逃逸的 iOS 定制工具箱】",
+          "title": "苹果/巨魔玩家/Erosion【沙盒逃逸的 iOS 定制工具箱】",
+          "ipaCount": 4
+        },
+{
           "path": "/苹果/巨魔玩家/EverPwnage【完美越狱工具】",
           "title": "苹果/巨魔玩家/EverPwnage【完美越狱工具】",
           "ipaCount": 2
@@ -2253,7 +2268,12 @@
           "title": "苹果/巨魔玩家/InjectWeChat【微信插件注入工具】",
           "ipaCount": 1
         },
-        {
+                {
+          "path": "/苹果/巨魔玩家/Legizmo【手表配对】",
+          "title": "苹果/巨魔玩家/Legizmo【手表配对】",
+          "ipaCount": 1
+        },
+{
           "path": "/苹果/巨魔玩家/Letterpress【活字印刷术】",
           "title": "苹果/巨魔玩家/Letterpress【活字印刷术】",
           "ipaCount": 1
@@ -2263,7 +2283,12 @@
           "title": "苹果/巨魔玩家/LingDongGG【灵动岛悬浮球】",
           "ipaCount": 3
         },
-        {
+                {
+          "path": "/苹果/巨魔玩家/MiniWatts【电池与充电监控器】",
+          "title": "苹果/巨魔玩家/MiniWatts【电池与充电监控器】",
+          "ipaCount": 9
+        },
+{
           "path": "/苹果/巨魔玩家/ModMyIPA【多开工具】",
           "title": "苹果/巨魔玩家/ModMyIPA【多开工具】",
           "ipaCount": 1
@@ -2393,7 +2418,12 @@
           "title": "苹果/巨魔玩家/SpeedGG【网络悬浮+诊断】",
           "ipaCount": 7
         },
-        {
+                {
+          "path": "/苹果/巨魔玩家/StikDebug【设备端调试器JIT 启用工具】",
+          "title": "苹果/巨魔玩家/StikDebug【设备端调试器JIT 启用工具】",
+          "ipaCount": 1
+        },
+{
           "path": "/苹果/巨魔玩家/SuperIcons【图标修改工具】",
           "title": "苹果/巨魔玩家/SuperIcons【图标修改工具】",
           "ipaCount": 4
@@ -2468,7 +2498,12 @@
           "title": "苹果/巨魔玩家/TrollOpen【悬浮球】",
           "ipaCount": 5
         },
-        {
+                {
+          "path": "/苹果/巨魔玩家/TrollSIMSwitcher【蜂窝切换器】",
+          "title": "苹果/巨魔玩家/TrollSIMSwitcher【蜂窝切换器】",
+          "ipaCount": 3
+        },
+{
           "path": "/苹果/巨魔玩家/TrollSpeed【网速悬浮】",
           "title": "苹果/巨魔玩家/TrollSpeed【网速悬浮】",
           "ipaCount": 20
@@ -2598,7 +2633,12 @@
           "title": "苹果/巨魔玩家/schemeshare【提取系统文件工具】",
           "ipaCount": 1
         },
-        {
+                {
+          "path": "/苹果/巨魔玩家/unc0ver【越狱工具】",
+          "title": "苹果/巨魔玩家/unc0ver【越狱工具】",
+          "ipaCount": 1
+        },
+{
           "path": "/苹果/巨魔玩家/一键修改【隐藏工具】",
           "title": "苹果/巨魔玩家/一键修改【隐藏工具】",
           "ipaCount": 2
