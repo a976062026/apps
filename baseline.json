@@ -96,6 +96,7 @@
    "/其他资源/01/iOS资源/IPA应用/FilzaJailedDS/专用 Tips 文件",
    "/其他资源/01/iOS资源/IPA应用/FilzaJailedDS/空音频文件",
    "/其他资源/01/iOS资源/IPA应用/FontChanger",
+   "/其他资源/01/iOS资源/IPA应用/GestaltX",
    "/其他资源/01/iOS资源/IPA应用/IconLib",
    "/其他资源/01/iOS资源/IPA应用/MiniWatts",
    "/其他资源/01/iOS资源/IPA应用/Misaka26",
@@ -108,6 +109,9 @@
    "/其他资源/01/iOS资源/IPA应用/Nugget/Windows",
    "/其他资源/01/iOS资源/IPA应用/OldOS",
    "/其他资源/01/iOS资源/IPA应用/PancakeStore",
+   "/其他资源/01/iOS资源/IPA应用/WQ Files",
+   "/其他资源/01/iOS资源/IPA应用/WQManager",
+   "/其他资源/01/iOS资源/IPA应用/iPadn",
    "/其他资源/01/iOS资源/IPA应用/全局高刷",
    "/其他资源/01/iOS资源/IPA应用/歌一刀",
    "/其他资源/01/iOS资源/IPA应用/歌一刀/音源",
@@ -257,6 +261,7 @@
    "/其他资源/05/签名工具/全能签",
    "/其他资源/05/签名工具/永久签",
    "/其他资源/05/签名工具/轻松签+",
+   "/其他资源/05/签名工具/闪签",
    "/其他资源/05/纯净砸壳/ChatGPT",
    "/其他资源/05/纯净砸壳/DeepSeek",
    "/巨魔专区/120hz",
@@ -608,10 +613,10 @@
    "/巨魔专区/静音模块",
    "/微信专区/微信砸壳/以下均为全权限官方砸壳纯净包"
   ],
-  "ipa_dirs": 453,
-  "scanned": 736,
+  "ipa_dirs": 459,
+  "scanned": 742,
   "partial": true,
-  "scanned_at": "2026-11-09 10:55"
+  "scanned_at": "2026-11-16 10:39"
  },
  "源2": {
   "dirs": [
@@ -764,6 +769,8 @@
    "/苹果/巨魔玩家/Derootifier【转无根】",
    "/苹果/巨魔玩家/DiPlay【让安卓车机实现CarPlay】",
    "/苹果/巨魔玩家/DiPlay【让安卓车机实现CarPlay】/CarUp低系统推荐！支持安卓4.0及以上",
+   "/苹果/巨魔玩家/DiPlay【让安卓车机实现CarPlay】/WQManager【应用数据备份+恢复、清理缓存】",
+   "/苹果/巨魔玩家/DiPlay【让安卓车机实现CarPlay】/WQManager【应用数据备份+恢复、清理缓存】/更多资源",
    "/苹果/巨魔玩家/DiPlay【让安卓车机实现CarPlay】/更多资源",
    "/苹果/巨魔玩家/Dopamine【多巴胺越狱工具】",
    "/苹果/巨魔玩家/DowngradeAPP【软件降级工具】",
@@ -779,6 +786,7 @@
    "/苹果/巨魔玩家/EnsWilde【禁用录音提示音】",
    "/苹果/巨魔玩家/Erosion【沙盒逃逸的 iOS 定制工具箱】",
    "/苹果/巨魔玩家/Erosion【沙盒逃逸的 iOS 定制工具箱】/更多资源",
+   "/苹果/巨魔玩家/Erosion【沙盒逃逸的 iOS 定制工具箱】/汉化中文版",
    "/苹果/巨魔玩家/EverPwnage【完美越狱工具】",
    "/苹果/巨魔玩家/FakeTools【虚拟工具箱】",
    "/苹果/巨魔玩家/Fila【全新文件管理器iOS15+】",
@@ -913,6 +921,10 @@
    "/苹果/巨魔玩家/TrollWatcher lite【悬浮球快捷跳转工具】",
    "/苹果/巨魔玩家/UiharuX【巨魔多功能工具】",
    "/苹果/巨魔玩家/UiharuX【巨魔多功能工具】/TrollWatcher lite【悬浮球快捷跳转工具】",
+   "/苹果/巨魔玩家/WQFiles【文件管理器+清理缓存垃圾】",
+   "/苹果/巨魔玩家/WQFiles【文件管理器+清理缓存垃圾】/更多资源",
+   "/苹果/巨魔玩家/WQToolkit【文件管理+多功能工具箱】",
+   "/苹果/巨魔玩家/WQToolkit【文件管理+多功能工具箱】/更多资源",
    "/苹果/巨魔玩家/Wi-Fi开关",
    "/苹果/巨魔玩家/WiFiList【WiFi密码查看器】",
    "/苹果/巨魔玩家/XTools【X工具箱】",
@@ -923,6 +935,10 @@
    "/苹果/巨魔玩家/iMemScan【游戏修改器】",
    "/苹果/巨魔玩家/iOSClean【清理iOS系统缓存】",
    "/苹果/巨魔玩家/iOSspeed【UI加速+强刷5G】",
+   "/苹果/巨魔玩家/iPadn【应用降级】",
+   "/苹果/巨魔玩家/iPadn【应用降级】/更多资源",
+   "/苹果/巨魔玩家/iPadn【应用降级】/标准版【含实时活动和小组件，签名需要 2 个 App ID。】",
+   "/苹果/巨魔玩家/iPadn【应用降级】/精简版【不含扩展，只需 1 个 App ID；不提供实时活动或小组件，其他功能相同。】",
    "/苹果/巨魔玩家/kfdmineek",
    "/苹果/巨魔玩家/kok3shi9【完美越狱工具，仅支持 iOS 9.2-9.3.4】",
    "/苹果/巨魔玩家/lara【DarkSword 漏洞利用工具】",
@@ -1034,21 +1050,21 @@
    "/苹果/游戏/王者 S39 iMemscan 视距修改",
    "/苹果/签名工具/轻松签/轻松签1"
   ],
-  "ipa_dirs": 295,
+  "ipa_dirs": 298,
   "scanned": 408,
   "partial": true,
-  "scanned_at": "2026-11-09 10:57"
+  "scanned_at": "2026-11-16 10:42"
  },
  "源3": {
   "dirs": [],
   "ipa_dirs": 0,
   "scanned": 17,
   "partial": false,
-  "scanned_at": "2026-11-09 10:57"
+  "scanned_at": "2026-11-16 10:42"
  },
  "源4": {
   "root_entries": 12,
-  "scanned_at": "2026-11-09 10:57"
+  "scanned_at": "2026-11-16 10:42"
  },
  "源5": {
   "dirs": [
@@ -1114,11 +1130,15 @@
    "/Trollstore/通话录音/NiceCaller",
    "/Trollstore/鬼脸安装器",
    "/Trollstore/🔕静音模块",
+   "/自签/Erosion",
    "/自签/FilzaEscapedDS",
    "/自签/Fliza文件管理器",
    "/自签/GBA模拟器",
+   "/自签/GestaltX",
    "/自签/H5gg",
    "/自签/Lara",
+   "/自签/WQFiles",
+   "/自签/WQFiles清理工具",
    "/自签/debs",
    "/自签/filza",
    "/自签/全局高刷",
@@ -1139,6 +1159,7 @@
    "/自签/金块",
    "/自签/锤子三件套",
    "/自签/降级app",
+   "/自签/降级app/iPadn",
    "/自签/降级app/旧版软件抓包下载 公众号：捷径指令大全",
    "/自签/隐藏dock栏和手势",
    "/自签/隐藏dock栏和手势/MilkCap一键修改",
@@ -1146,10 +1167,10 @@
    "/自签/隐藏dock栏和手势/mdc0",
    "/自签/隐藏dock栏和手势/一键注销"
   ],
-  "ipa_dirs": 82,
-  "scanned": 113,
+  "ipa_dirs": 87,
+  "scanned": 118,
   "partial": false,
-  "scanned_at": "2026-11-09 10:58"
+  "scanned_at": "2026-11-16 10:43"
  },
  "源6": {
   "dirs": [
@@ -1242,7 +1263,7 @@
   "ipa_dirs": 15,
   "scanned": 88,
   "partial": false,
-  "scanned_at": "2026-11-09 10:59"
+  "scanned_at": "2026-11-16 10:43"
  },
  "源7": {
   "dirs": [
@@ -1261,7 +1282,7 @@
   "ipa_dirs": 12,
   "scanned": 15,
   "partial": false,
-  "scanned_at": "2026-11-09 10:59"
+  "scanned_at": "2026-11-16 10:44"
  },
  "微信源": {
   "dirs": [
@@ -1335,6 +1356,6 @@
   "ipa_dirs": 62,
   "scanned": 68,
   "partial": false,
-  "scanned_at": "2026-11-09 10:59"
+  "scanned_at": "2026-11-16 10:44"
  }
 }
